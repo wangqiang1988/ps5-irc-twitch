@@ -86,10 +86,10 @@ class MyHandler(blivedm.BaseHandler):
     async def _on_gift(self, client: blivedm.BLiveClient, message: blivedm.GiftMessage):
         print(f'[{client.room_id}] {message.uname} 赠送{message.gift_name}x{message.num}'
               f' （{message.coin_type}瓜子x{message.total_coin}）')
-        send(":" + message.uname +"!" + message.uname + "@" + message.uname + ".tmi.twitch.tv PRIVMSG  " + "#willwillwang :"+ "give " + message.gift_name + "x" + message.num)
+#        send(":" + message.uname +"!" + message.uname + "@" + message.uname + ".tmi.twitch.tv PRIVMSG  " + "#willwillwang :"+ "give " + message.gift_name + "x" + message.num)
     async def _on_buy_guard(self, client: blivedm.BLiveClient, message: blivedm.GuardBuyMessage):
         print(f'[{client.room_id}] {message.username} 购买{message.gift_name}')
-        send(":" + message.uname +"!" + message.uname + "@" + message.uname + ".tmi.twitch.tv PRIVMSG  " + "#willwillwang :"+ "buy" + message.gift_name)
+#        send(":" + message.uname +"!" + message.uname + "@" + message.uname + ".tmi.twitch.tv PRIVMSG  " + "#willwillwang :"+ "buy" + message.gift_name)
     async def _on_super_chat(self, client: blivedm.BLiveClient, message: blivedm.SuperChatMessage):
         print(f'[{client.room_id}] 醒目留言 ¥{message.price} {message.uname}：{message.message}')
 
