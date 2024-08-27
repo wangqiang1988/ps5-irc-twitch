@@ -2,7 +2,6 @@ import struct
 import zlib
 import json
 import socket
-import pusher
 def send(bmsg):
 # 创建一个socket:
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
